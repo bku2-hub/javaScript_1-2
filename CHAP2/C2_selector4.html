@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li:first-child{background-color: lightcoral; }
+        li:first-child::first-letter{/*첫번쨰 lu요쇼의 첫글자 크기 변경*/ font-size: 200%; color: #ff0000;}
+        .itme:hover{cursor: pointer; background-color: lightgreen;}
+        .itme::after{content:" - 중요함!!!"; color: magenta;}
+    </style>
+</head>
+<body>
+    <ul>
+        <li>목록#1</li>
+        <li>목록#2</li>
+        <li class="itme">목록#3</li>
+    </ul>
+</body>
+</html>
